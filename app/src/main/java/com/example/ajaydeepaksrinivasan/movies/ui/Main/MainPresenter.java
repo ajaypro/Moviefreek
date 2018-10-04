@@ -62,7 +62,4 @@ public class MainPresenter implements MainPresenterInterface {
         };
     }
 
-
-
-
 }

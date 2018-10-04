@@ -1,8 +1,7 @@
 package com.example.ajaydeepaksrinivasan.movies.ui.Search;
 
 import android.util.Log;
-import android.widget.SearchView;
-
+import android.support.v7.widget.SearchView;
 
 import com.example.ajaydeepaksrinivasan.movies.Models.MovieResponse;
 import com.example.ajaydeepaksrinivasan.movies.Network.NetworkInterface;
@@ -60,7 +59,7 @@ public class SearchPresenter implements SearchPresenterInterface {
                     public ObservableSource<MovieResponse> apply(String s) throws Exception {
 
                         return Networkclient.getRetrofit().create(NetworkInterface.class)
-                                .getMovies("a1f804d4c0332fe85b07f47b9331b0bd");
+                                .getMoviesBasedOnQuery("a1f804d4c0332fe85b07f47b9331b0bd",s);
                     }
                 })
                 .subscribeOn(Schedulers.io())

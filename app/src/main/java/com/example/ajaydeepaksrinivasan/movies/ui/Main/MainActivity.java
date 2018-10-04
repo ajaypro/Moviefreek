@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements MainViewInterface
 
     @Override
     public void hideProgressBar() {
-         progressBar.setVisibility(View.VISIBLE);
+         progressBar.setVisibility(View.GONE);
     }
 
 

@@ -1,7 +1,6 @@
 package com.example.ajaydeepaksrinivasan.movies.ui.Search;
 
-
-import android.widget.SearchView;
+import android.support.v7.widget.SearchView;
 
 public interface SearchPresenterInterface {
 
